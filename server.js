@@ -1,8 +1,9 @@
 const express = require('express');
 const bodyParser = require('body-parser');
-// const mongoose = require(mongoose);
+const axios = require('axios'); // for http requests
+const mongoose = require('mongoose'); // for talking to mongoDB
 
-// mongoose.Promise = global.Promise;
+mongoose.Promise = global.Promise;
 // mongoose.connect('mongodb://localhost/auth');
 
 const app = express();

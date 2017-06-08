@@ -4,7 +4,7 @@ const axios = require('axios'); // for http requests
 const mongoose = require('mongoose'); // for talking to mongoDB
 
 mongoose.Promise = global.Promise;
-// mongoose.connect('mongodb://localhost/auth');
+mongoose.connect('mongodb://localhost/auth');
 
 const app = express();
 app.use(bodyParser.json());

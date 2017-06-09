@@ -1,4 +1,4 @@
-{ 
+{
   "repository": "beansprout/comic-inventory-app",
   "license": "MIT",
   "dependencies": {
@@ -12,7 +12,7 @@
     "passport-jwt": "^2.2.1",
     "passport-local": "^1.0.0",
     "setup-eslint": "^1.0.1",
-    "mongodb": "@latest",
+    "mongodb": "^2.2.28",
     "mongodb-uri": "^0.9.7"
   },
   "devDependencies": {

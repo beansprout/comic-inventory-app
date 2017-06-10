@@ -5,6 +5,7 @@ const cors = require('cors');
 const mongoose = require('mongoose'); // for talking to mongoDB
 const bodyParser = require('body-parser');
 const axios = require('axios'); // for http requests
+
 const port = process.env.PORT || 8080;
 
 const app = express();
@@ -12,7 +13,7 @@ app.use(cors());
 app.use(bodyParser.urlencoded({ extended: false }))
 app.use(bodyParser.json());
 
-//--------database connection--------------------
+// --------database connection--------------------
 const dbUser = process.env.DB_USER;
 const pass = process.env.PASS;
 const host = process.env.HOST;
@@ -24,18 +25,23 @@ console.log(mongodbUri);
 
 // Mongoose by default sets the auto_reconnect option to true
 // add 30 second connection timeout to allow for enough time to connect
-const options = { server: { socketOptions: { keepAlive: 300000, connectTimeoutMS:   30000 } }, 
-                replset: { socketOptions: { keepAlive: 300000, connectTimeoutMS : 30000 } } };       
+const options = { server: { socketOptions: { keepAlive: 300000, connectTimeoutMS: 30000 } },
+  replset: { socketOptions: { keepAlive: 300000, connectTimeoutMS: 30000 } } };
 
-mongoose.Promise = global.Promise;
 mongoose.connect(mongodbUri, options);
+const dbconnect = mongoose.connection;
+dbconnect.on('error', console.error.bind(console, 'connection error:'));
+dbconnect.once('open', () => {
+  // we're connected!
+});
 //-----------------------------------------------
+require('./controllers')(app);
 
 const apiKey = process.env.API_KEY;
 const baseUrl = process.env.API_URL;
 
 app.get('/', (req, res) => {
-  res.send("Hello World");
+  res.send('Hello World');
   console.log('received get request');
 });
 

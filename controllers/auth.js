@@ -1,5 +1,5 @@
-const models = require('../models');
-// const getTokenForUser = require('../services/token');
+const { User } = require('../models');
+const getTokenForUser = require('../services/token');
 
   // create a new user and return a valid JWT token to the client
 const signUp = (req, res) => {
@@ -13,13 +13,13 @@ const signUp = (req, res) => {
     res.send(getTokenForUser(user));
   });
 };
-
   // generate a JWT token if the username/password is valid
-const signIn = (req, res) => {
 
+const signIn = (req, res) => {
+  res.send({ token: getTokenForUser(req.user) });
 };
 
 module.exports = (app) => {
   app.post('/signup', signUp);
-  // app.post('/signin', signIn);
+  app.post('/signin', signIn);
 };

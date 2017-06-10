@@ -1,18 +1,15 @@
-// authentication using passport.js and json web tokens (jwt)
-
 const passport = require('passport');
 const User = require('../models').User;
-const config = require('../config');
 const JwtStrategy = require('passport-jwt').Strategy;
-const ExtractJwt = require('passport-jwt').ExtractJwt;
+const { ExtractJwt } = require('passport-jwt');
 const LocalStrategy = require('passport-local');
 
 const localOptions = {
-  usernameField: 'username',
+  usernameField: 'email',
 };
 
-const localLogin = new LocalStrategy(localOptions, (username, password, done) => {
-  User.findOne({ username }, (err, user) => {
+const localLogin = new LocalStrategy(localOptions, (email, password, done) => {
+  User.findOne({ email }, (err, user) => {
     if (err) return done(err);
     if (!user) return done(null, false);
     user.checkPassword(password, (err, isMatch) => {
@@ -25,7 +22,7 @@ const localLogin = new LocalStrategy(localOptions, (username, password, done) =>
 
 const jwtOptions = {
   jwtFromRequest: ExtractJwt.fromHeader('authorization'),
-  secretOrKey: config.secret,
+  secretOrKey: process.env.SECRET,
 };
 
 const jwtLogin = new JwtStrategy(jwtOptions, (payload, done) => {

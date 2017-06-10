@@ -1,3 +1,5 @@
+require('dotenv').config();
+
 const jwt = require('jwt-simple');
 // create token
 
@@ -6,5 +8,5 @@ module.exports = (user) => {
   return jwt.encode({
     sub: user.id,
     iat: new Date().getTime(),
-  }, process.env.SECRET);
+  }, (process.env.SECRET.toString));
 };

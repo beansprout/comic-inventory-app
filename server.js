@@ -35,6 +35,11 @@ dbconnect.once('open', () => {
   // we're connected!
 });
 //-----------------------------------------------
+ 
+ app.get('/', (req, res) => {
+    res.send('Hello World');
+  });
+
 require('./controllers')(app);
 require('./routes')(app);
 

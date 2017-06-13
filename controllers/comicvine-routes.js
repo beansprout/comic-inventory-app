@@ -1,17 +1,11 @@
-// routes table:
+// TODO routes table:
+// these are just test routes for now
 const axios = require('axios'); // for http requests
 
 const apiKey = process.env.API_KEY;
 const baseUrl = process.env.API_URL;
 
-
 module.exports = (app) => {
-  app.get('/', (req, res) => {
-    res.send('Hello World');
-    console.log('received get request');
-  });
-
-
   app.get('/volumes', (req, res) => {
     const url = `${baseUrl}volumes?api_key=${apiKey}&filter=name:${req.params.name}&format=json`;
     axios.get(url).then((response) => {
@@ -38,7 +32,6 @@ module.exports = (app) => {
       res.send(err);
     });
   });
-
 
   app.get('/search', (req, res) => {
     const url = `${baseUrl}volumes?api_key=${apiKey}&filter=name:${req.params.name}&format=json`;

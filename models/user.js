@@ -10,8 +10,8 @@ const UserSchema = mongoose.Schema({
     validate: {
       validator: (email) => {
         return /^(([^<>()\[\]\\.,;:\s@"]+(\.[^<>()\[\]\\.,;:\s@"]+)*)|(".+"))@((\[[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}])|(([a-zA-Z\-0-9]+\.)+[a-zA-Z]{2,}))$/.test(email);
-      }
-    }
+      },
+    },
   },
   password: {
     type: String,
@@ -21,7 +21,38 @@ const UserSchema = mongoose.Schema({
     type: String,
     required: true,
   },
-  items: [{ type: Schema.Types.ObjectId, ref: 'item'}]
+  collections: {
+    collectionName: { type: String, unique: true },
+    collectionCurrentValue: { type: Number,
+      // add current value for collection from updated price
+    },
+    items: {
+      itemTitle: { type: String },
+      issueNumber: { type: Number }, // check
+      itemSeriesName: { type: String },
+      itemDate: { type: Date },
+      dateAdded: Date.now(),
+      own: { type: Boolean },
+      wishList: { type: Boolean },
+      itemPurchDate: { type: Date },
+      itemPurchPriceCdn: { type: Number },
+//       itemPurchPriceUsd: { type: Number },
+//       itemConversionUsd: { type: Number },
+//       itemConversionCdn: { type: Number },
+      paper: String,
+      grade: String,
+      cgcGrade: String,
+      slabbed: Boolean,
+      slabbedLater: Boolean,
+      seller: String,
+      comments: String,
+      priceUpdates: {
+        // from price Updates collection
+      },
+      itemCurrentPrice: { type: Number, // calculate
+      },
+    },
+  },
 });
 
 UserSchema.pre('save', function(next) {

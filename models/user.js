@@ -2,6 +2,7 @@ const mongoose = require('mongoose');
 const bcrypt = require('bcrypt-nodejs');
 require('mongoose-currency').loadType(mongoose);
 const Currency = mongoose.Types.Currency;
+const ObjectId = Schema.ObjectId,
 
 const UserSchema = mongoose.Schema({
   email: {
@@ -19,7 +20,8 @@ const UserSchema = mongoose.Schema({
     type: String,
     required: true,
   },
-  username: {
+  user: ObjectId,
+  userName: {
     type: String,
     required: true,
   },
@@ -30,6 +32,7 @@ const UserSchema = mongoose.Schema({
     },
     items: {
       itemTitle: { type: String },
+      itemId: ObjectId,
       issueNumber: { type: Number }, // check
       itemSeriesName: { type: String },
       itemDate: { type: Date },
@@ -56,8 +59,6 @@ const UserSchema = mongoose.Schema({
     },
   },
 });
-
-
 
 UserSchema.pre('save', function(next) {
   // generate the salt

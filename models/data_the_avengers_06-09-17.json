@@ -1,0 +1,804 @@
+[
+  {
+    "ISSUE #": 1
+  },
+  {
+    "ISSUE #": 2,
+    "OWN": "X",
+    "GRADE": 3.5,
+    "PRICE": "$130.00",
+    "OPG VALUE": "$150.00",
+    "OPG 2014": "$175.00",
+    "OPG 2015": "$175.00",
+    "OPG 2016": "$175.00",
+    "SELLER": "comicconnect",
+    "COMMENTS": "CGC"
+  },
+  {
+    "ISSUE #": 3,
+    "OWN": "X",
+    "GRADE": 5,
+    "PRICE": "$145.00",
+    "OPG VALUE": "$180.00",
+    "OPG 2014": "$180.00",
+    "OPG 2015": "$200.00",
+    "OPG 2016": "$200.00",
+    "SELLER": "metropolis"
+  },
+  {
+    "ISSUE #": 4,
+    "OWN": "X",
+    "GRADE": 8.5,
+    "PRICE": " $2,975.00",
+    "OPG VALUE": " $2,900.00",
+    "OPG 2014": " $3,200.00",
+    "OPG 2015": " $3,200.00",
+    "OPG 2016": " $3,500.00",
+    "SELLER": "metropolis",
+    "COMMENTS": "CGC"
+  },
+  {
+    "ISSUE #": 5,
+    "OWN": "X",
+    "GRADE": 5,
+    "PRICE": "$105.00",
+    "OPG VALUE": "$110.00",
+    "OPG 2014": "$100.00",
+    "OPG 2015": "$120.00",
+    "OPG 2016": "$120.00",
+    "SELLER": "metropolis"
+  },
+  {
+    "ISSUE #": 6
+  },
+  {
+    "ISSUE #": 7
+  },
+  {
+    "ISSUE #": 8,
+    "OWN": "X",
+    "GRADE": 5,
+    "PRICE": "$46.00",
+    "OPG VALUE": "$85.00",
+    "OPG 2014": "$85.00",
+    "OPG 2015": "$85.00",
+    "OPG 2016": "$90.00",
+    "SELLER": "metropolis"
+  },
+  {
+    "ISSUE #": 9
+  },
+  {
+    "ISSUE #": 10
+  },
+  {
+    "ISSUE #": 11,
+    "OWN": "X",
+    "GRADE": 5,
+    "PRICE": "$73.00",
+    "OPG VALUE": "$85.00",
+    "OPG 2014": "$85.00",
+    "OPG 2015": "$85.00",
+    "OPG 2016": "$90.00",
+    "SELLER": "metropolis"
+  },
+  {
+    "ISSUE #": 12,
+    "OWN": "X",
+    "GRADE": 9,
+    "PRICE": "$230.00",
+    "OPG VALUE": "$271.00",
+    "OPG 2014": "$281.00",
+    "OPG 2015": "$291.00",
+    "OPG 2016": "$291.00",
+    "SELLER": "metropolis",
+    "COMMENTS": "CGC"
+  },
+  {
+    "ISSUE #": 13,
+    "OWN": "X",
+    "GRADE": 8.5,
+    "PRICE": "$130.00",
+    "OPG VALUE": "$190.00",
+    "OPG 2014": "$200.00",
+    "OPG 2015": "$200.00",
+    "OPG 2016": "$200.00",
+    "SELLER": "n8comics",
+    "COMMENTS": "CGC",
+    "field12": "SLABBED LATER"
+  },
+  {
+    "ISSUE #": 14,
+    "OWN": "X",
+    "GRADE": 8.5,
+    "PRICE": "$125.00",
+    "OPG VALUE": "$190.00",
+    "OPG 2014": "$200.00",
+    "OPG 2015": "$200.00",
+    "OPG 2016": "$200.00",
+    "SELLER": "n8comics",
+    "COMMENTS": "CGC",
+    "field12": "SLABBED LATER"
+  },
+  {
+    "ISSUE #": 15,
+    "OWN": "X",
+    "GRADE": 9,
+    "PRICE": "$150.00",
+    "OPG VALUE": "$190.00",
+    "OPG 2014": "$281.00",
+    "OPG 2015": "$291.00",
+    "OPG 2016": "$291.00",
+    "SELLER": "metropolis",
+    "COMMENTS": "CGC",
+    "field12": "SLABBED LATER",
+    "field14": "originally graded 8.5"
+  },
+  {
+    "ISSUE #": 16,
+    "OWN": "X",
+    "GRADE": 7,
+    "PRICE": "$35.00",
+    "OPG VALUE": "$140.00",
+    "OPG 2014": "$150.00",
+    "OPG 2015": "$150.00",
+    "OPG 2016": "$170.00",
+    "SELLER": "paradise"
+  },
+  {
+    "ISSUE #": 17,
+    "OWN": "X",
+    "GRADE": 5.5,
+    "PRICE": "$26.00",
+    "OPG VALUE": "$29.00",
+    "OPG 2014": "$30.00",
+    "OPG 2015": "$30.00",
+    "OPG 2016": "$30.00",
+    "SELLER": "metropolis"
+  },
+  {
+    "ISSUE #": 18,
+    "OWN": "X",
+    "GRADE": 8,
+    "PRICE": "$72.00",
+    "OPG VALUE": "$82.00",
+    "OPG 2014": "$84.00",
+    "OPG 2015": "$89.00",
+    "OPG 2016": "$89.00",
+    "SELLER": "metropolis",
+    "COMMENTS": "CGC"
+  },
+  {
+    "ISSUE #": 19,
+    "OWN": "X",
+    "GRADE": 8,
+    "PRICE": "$72.00",
+    "OPG VALUE": "$91.00",
+    "OPG 2014": "$96.00",
+    "OPG 2015": "$100.00",
+    "OPG 2016": "$100.00",
+    "SELLER": "metropolis"
+  },
+  {
+    "ISSUE #": 20,
+    "OWN": "X",
+    "GRADE": 8.5,
+    "PRICE": "$71.00",
+    "OPG VALUE": "$95.00",
+    "OPG 2014": "$95.00",
+    "OPG 2015": "$100.00",
+    "OPG 2016": "$100.00",
+    "SELLER": "metropolis"
+  },
+  {
+    "ISSUE #": 21,
+    "OWN": "X",
+    "GRADE": 8,
+    "PRICE": "$54.00",
+    "OPG VALUE": "$64.00",
+    "OPG 2014": "$66.00",
+    "OPG 2015": "$69.00",
+    "OPG 2016": "$69.00",
+    "SELLER": "metropolis"
+  },
+  {
+    "ISSUE #": 22,
+    "OWN": "X",
+    "GRADE": 8.5,
+    "PRICE": "$67.00",
+    "OPG VALUE": "$95.00",
+    "OPG 2014": "$95.00",
+    "OPG 2015": "$100.00",
+    "OPG 2016": "$100.00",
+    "SELLER": "metropolis"
+  },
+  {
+    "ISSUE #": 23,
+    "OWN": "X",
+    "GRADE": 8.5,
+    "PRICE": "$58.00",
+    "OPG VALUE": "$75.00",
+    "OPG 2014": "$80.00",
+    "OPG 2015": "$85.00",
+    "OPG 2016": "$90.00",
+    "SELLER": "metropolis"
+  },
+  {
+    "ISSUE #": 24,
+    "OWN": "X",
+    "GRADE": 9,
+    "PRICE": "$63.00",
+    "OPG VALUE": "$111.00",
+    "OPG 2014": "$117.00",
+    "OPG 2015": "$123.00",
+    "OPG 2016": "$123.00",
+    "SELLER": "metropolis"
+  },
+  {
+    "ISSUE #": 25,
+    "OWN": "X",
+    "GRADE": 9.2,
+    "PRICE": "$100.00",
+    "OPG VALUE": "$157.00",
+    "OPG 2014": "$300.00",
+    "OPG 2015": "$375.00",
+    "OPG 2016": "$400.00",
+    "SELLER": "metropolis"
+  },
+  {
+    "ISSUE #": 26,
+    "OWN": "X",
+    "GRADE": 9,
+    "PRICE": "$80.00",
+    "OPG VALUE": "$111.00",
+    "OPG 2014": "$117.00",
+    "OPG 2015": "$123.00",
+    "OPG 2016": "$123.00",
+    "SELLER": "metropolis",
+    "COMMENTS": "CGC"
+  },
+  {
+    "ISSUE #": 27,
+    "OWN": "X",
+    "GRADE": 9,
+    "PRICE": "$80.00",
+    "OPG VALUE": "$111.00",
+    "OPG 2014": "$117.00",
+    "OPG 2015": "$123.00",
+    "OPG 2016": "$123.00",
+    "SELLER": "metropolis",
+    "COMMENTS": "CGC"
+  },
+  {
+    "ISSUE #": 28
+  },
+  {
+    "ISSUE #": 29,
+    "OWN": "X",
+    "GRADE": "VF-",
+    "PRICE": "$15.00",
+    "OPG VALUE": "$40.00",
+    "OPG 2014": "$80.00",
+    "OPG 2015": "$45.00",
+    "OPG 2016": "$45.00",
+    "SELLER": "private",
+    "COMMENTS": "can $"
+  },
+  {
+    "ISSUE #": 30,
+    "OWN": "X",
+    "GRADE": "VG",
+    "PRICE": "$5.00",
+    "OPG VALUE": "$18.00",
+    "OPG 2014": "$18.00",
+    "OPG 2015": "$18.00",
+    "OPG 2016": "$18.00",
+    "SELLER": "private",
+    "COMMENTS": "can $"
+  },
+  {
+    "ISSUE #": 31
+  },
+  {
+    "ISSUE #": 32,
+    "OWN": "X",
+    "GRADE": "VF",
+    "PRICE": "$10.00",
+    "OPG VALUE": "$49.00",
+    "OPG 2014": "$49.00",
+    "OPG 2015": "$51.00",
+    "OPG 2016": "$51.00",
+    "SELLER": "private",
+    "COMMENTS": "can $"
+  },
+  {
+    "ISSUE #": 33
+  },
+  {
+    "ISSUE #": 34,
+    "OWN": "X",
+    "GRADE": "F",
+    "PRICE": "$5.00",
+    "OPG VALUE": "$21.00",
+    "OPG 2014": "$21.00",
+    "OPG 2015": "$24.00",
+    "OPG 2016": "$24.00",
+    "SELLER": "private",
+    "COMMENTS": "can $"
+  },
+  {
+    "ISSUE #": 35,
+    "OWN": "X",
+    "GRADE": "VG-",
+    "PRICE": "$5.00",
+    "OPG VALUE": "$10.00",
+    "OPG 2014": "$10.00",
+    "OPG 2015": "$10.00",
+    "OPG 2016": "$10.00",
+    "SELLER": "private",
+    "COMMENTS": "can $"
+  },
+  {
+    "ISSUE #": 36,
+    "OWN": "X",
+    "GRADE": 8.5,
+    "PRICE": "$38.00",
+    "OPG VALUE": "$60.00",
+    "OPG 2014": "$60.00",
+    "OPG 2015": "$65.00",
+    "OPG 2016": "$70.00",
+    "SELLER": "metropolis"
+  },
+  {
+    "ISSUE #": 37
+  },
+  {
+    "ISSUE #": 38,
+    "OWN": "X",
+    "GRADE": 8.5,
+    "PRICE": "$45.00",
+    "OPG VALUE": "$65.00",
+    "OPG 2014": "$65.00",
+    "OPG 2015": "$70.00",
+    "OPG 2016": "$70.00",
+    "SELLER": "metropolis"
+  },
+  {
+    "ISSUE #": 39
+  },
+  {
+    "ISSUE #": 40
+  },
+  {
+    "ISSUE #": 41,
+    "OWN": "X",
+    "GRADE": 8.5,
+    "PRICE": "$39.00",
+    "OPG VALUE": "$60.00",
+    "OPG 2014": "$65.00",
+    "OPG 2015": "$65.00",
+    "OPG 2016": "$65.00",
+    "SELLER": "metropolis"
+  },
+  {
+    "ISSUE #": 42,
+    "OWN": "X",
+    "GRADE": "VF-",
+    "PRICE": "$5.00",
+    "OPG VALUE": "$30.00",
+    "OPG 2014": "$30.00",
+    "OPG 2015": "$35.00",
+    "OPG 2016": "$35.00",
+    "SELLER": "private",
+    "COMMENTS": "can $"
+  },
+  {
+    "ISSUE #": 43
+  },
+  {
+    "ISSUE #": 44,
+    "OWN": "X",
+    "GRADE": 9,
+    "PRICE": "$60.00",
+    "OPG VALUE": "$79.00",
+    "OPG 2014": "$92.00",
+    "OPG 2015": "$86.00",
+    "OPG 2016": "$86.00",
+    "SELLER": "comicconnect",
+    "COMMENTS": "CGC"
+  },
+  {
+    "ISSUE #": 45,
+    "OWN": "X",
+    "GRADE": "F+",
+    "PRICE": "$5.00",
+    "OPG VALUE": "$18.00",
+    "OPG 2014": "$21.00",
+    "OPG 2015": "$30.00",
+    "OPG 2016": "$30.00",
+    "SELLER": "private",
+    "COMMENTS": "can $"
+  },
+  {
+    "ISSUE #": 46,
+    "OWN": "X",
+    "GRADE": 8.5,
+    "PRICE": "$40.00",
+    "OPG VALUE": "$50.00",
+    "OPG 2014": "$70.00",
+    "OPG 2015": "$70.00",
+    "OPG 2016": "$70.00",
+    "SELLER": "metropolis",
+    "COMMENTS": "CGC"
+  },
+  {
+    "ISSUE #": 47,
+    "OWN": "X",
+    "GRADE": "VF-",
+    "PRICE": "$5.00",
+    "OPG VALUE": "$40.00",
+    "OPG 2014": "$40.00",
+    "OPG 2015": "$35.00",
+    "OPG 2016": "$35.00",
+    "SELLER": "private",
+    "COMMENTS": "can $"
+  },
+  {
+    "ISSUE #": 48,
+    "OWN": "X",
+    "GRADE": "VF+",
+    "PRICE": "$40.50",
+    "OPG VALUE": "$65.00",
+    "OPG 2014": "$65.00",
+    "OPG 2015": "$70.00",
+    "OPG 2016": "$70.00",
+    "SELLER": "metropolis"
+  },
+  {
+    "ISSUE #": 49,
+    "OWN": "X",
+    "GRADE": 9,
+    "PRICE": "$52.00",
+    "OPG VALUE": "$79.00",
+    "OPG 2014": "$86.00",
+    "OPG 2015": "$89.00",
+    "OPG 2016": "$89.00",
+    "SELLER": "metropolis"
+  },
+  {
+    "ISSUE #": 50,
+    "OWN": "X",
+    "GRADE": 9,
+    "PRICE": "$48.00",
+    "OPG VALUE": "$79.00",
+    "OPG 2014": "$82.00",
+    "OPG 2015": "$86.00",
+    "OPG 2016": "$86.00",
+    "SELLER": "comicconnect",
+    "COMMENTS": "CGC"
+  },
+  {
+    "ISSUE #": 51,
+    "OWN": "X",
+    "GRADE": 8.5,
+    "PRICE": "$45.00",
+    "OPG VALUE": "$60.00",
+    "OPG 2014": "$70.00",
+    "OPG 2015": "$75.00",
+    "OPG 2016": "$75.00",
+    "SELLER": "metropolis"
+  },
+  {
+    "ISSUE #": 52
+  },
+  {
+    "ISSUE #": 53,
+    "OWN": "X",
+    "GRADE": 8.5,
+    "PRICE": "$84.00",
+    "OPG VALUE": "$85.00",
+    "OPG 2014": "$90.00",
+    "OPG 2015": "$90.00",
+    "OPG 2016": "$90.00",
+    "SELLER": "comicconnect",
+    "COMMENTS": "CGC"
+  },
+  {
+    "ISSUE #": 54,
+    "OWN": "X",
+    "GRADE": 9,
+    "PRICE": "$46.75",
+    "OPG VALUE": "$79.00",
+    "OPG 2014": "$132.00",
+    "OPG 2015": "$211.00",
+    "OPG 2016": "$227.00",
+    "SELLER": "metropolis",
+    "field12": "TREMONT NON-PEDIGREE",
+    "field14": "CGC'D LATER"
+  },
+  {
+    "ISSUE #": 55
+  },
+  {
+    "ISSUE #": 56,
+    "OWN": "X",
+    "GRADE": 9.2,
+    "PRICE": "$85.00",
+    "OPG VALUE": "$135.00",
+    "OPG 2014": "$140.00",
+    "OPG 2015": "$160.00",
+    "OPG 2016": "$160.00",
+    "SELLER": "metropolis",
+    "COMMENTS": "CGC"
+  },
+  {
+    "ISSUE #": 57,
+    "OWN": "X",
+    "GRADE": "VG",
+    "PRICE": "$5.00",
+    "OPG VALUE": "$38.00",
+    "OPG 2014": "$68.00",
+    "OPG 2015": "$92.00",
+    "OPG 2016": "$92.00",
+    "SELLER": "private",
+    "COMMENTS": "can $"
+  },
+  {
+    "ISSUE #": 58
+  },
+  {
+    "ISSUE #": 59
+  },
+  {
+    "ISSUE #": 60
+  },
+  {
+    "ISSUE #": 61,
+    "OWN": "X",
+    "GRADE": "F/VF",
+    "PRICE": "FREE",
+    "OPG VALUE": "$20.00",
+    "OPG 2014": "$20.00",
+    "OPG 2015": "$25.00",
+    "OPG 2016": "$25.00",
+    "SELLER": "n8kcomics"
+  },
+  {
+    "ISSUE #": 62
+  },
+  {
+    "ISSUE #": 63
+  },
+  {
+    "ISSUE #": 64
+  },
+  {
+    "ISSUE #": 65,
+    "OWN": "X",
+    "GRADE": 9,
+    "PRICE": "$39.00",
+    "OPG VALUE": "$66.00",
+    "OPG 2014": "$73.00",
+    "OPG 2015": "$76.00",
+    "OPG 2016": "$76.00",
+    "SELLER": "metropolis"
+  },
+  {
+    "ISSUE #": 66
+  },
+  {
+    "ISSUE #": 67
+  },
+  {
+    "ISSUE #": 68
+  },
+  {
+    "ISSUE #": 69,
+    "OWN": "X",
+    "GRADE": 8.5,
+    "PRICE": "$35.00",
+    "OPG VALUE": "$50.00",
+    "OPG 2014": "$50.00",
+    "OPG 2015": "$55.00",
+    "OPG 2016": "$55.00",
+    "SELLER": "metropolis"
+  },
+  {
+    "ISSUE #": 70
+  },
+  {
+    "ISSUE #": 71,
+    "OWN": "X",
+    "GRADE": 7.5,
+    "PRICE": "$35.00",
+    "OPG VALUE": "$35.00",
+    "OPG 2014": "$35.00",
+    "OPG 2015": "$40.00",
+    "OPG 2016": "$40.00",
+    "SELLER": "paradise"
+  },
+  {
+    "ISSUE #": 72,
+    "OWN": "X",
+    "GRADE": 8.5,
+    "PRICE": "$35.00",
+    "OPG VALUE": "$45.00",
+    "OPG 2014": "$50.00",
+    "OPG 2015": "$50.00",
+    "OPG 2016": "$50.00",
+    "SELLER": "metropolis"
+  },
+  {
+    "ISSUE #": 73,
+    "OWN": "X"
+  },
+  {
+    "ISSUE #": 74,
+    "OWN": "X",
+    "GRADE": 9,
+    "PRICE": "$45.00",
+    "OPG VALUE": "$57.00",
+    "OPG 2014": "$60.00",
+    "OPG 2015": "$63.00",
+    "OPG 2016": "$63.00",
+    "SELLER": "metropolis"
+  },
+  {
+    "ISSUE #": 75
+  },
+  {
+    "ISSUE #": 76
+  },
+  {
+    "ISSUE #": 77
+  },
+  {
+    "ISSUE #": 78,
+    "OWN": "X",
+    "GRADE": 9,
+    "PRICE": "$55.00",
+    "OPG VALUE": "$57.00",
+    "OPG 2014": "$60.00",
+    "OPG 2015": "$63.00",
+    "OPG 2016": "$63.00",
+    "SELLER": "metropolis",
+    "COMMENTS": "CGC"
+  },
+  {
+    "ISSUE #": 79
+  },
+  {
+    "ISSUE #": 80,
+    "OWN": "X",
+    "GRADE": 9,
+    "PRICE": "$39.00",
+    "OPG VALUE": "$60.00",
+    "OPG 2014": "$66.00",
+    "OPG 2015": "$73.00",
+    "OPG 2016": "$82.00",
+    "SELLER": "metropolis"
+  },
+  {
+    "ISSUE #": 81,
+    "OWN": "X",
+    "GRADE": 8,
+    "PRICE": "$33.00",
+    "OPG VALUE": "$33.00",
+    "OPG 2014": "$34.00",
+    "OPG 2015": "$35.00",
+    "OPG 2016": "$35.00",
+    "SELLER": "metropolis"
+  },
+  {
+    "ISSUE #": 82
+  },
+  {
+    "ISSUE #": 83,
+    "OWN": "X",
+    "GRADE": 8.5,
+    "PRICE": "$40.00",
+    "OPG VALUE": "$45.00",
+    "OPG 2014": "$55.00",
+    "OPG 2015": "$55.00",
+    "OPG 2016": "$110.00",
+    "SELLER": "metropolis"
+  },
+  {
+    "ISSUE #": 84
+  },
+  {
+    "ISSUE #": 85
+  },
+  {
+    "ISSUE #": 86
+  },
+  {
+    "ISSUE #": 87
+  },
+  {
+    "ISSUE #": 88,
+    "OWN": "X",
+    "GRADE": 8.5,
+    "PRICE": "$38.00",
+    "OPG VALUE": "$40.00",
+    "OPG 2014": "$50.00",
+    "OPG 2015": "$50.00",
+    "OPG 2016": "$50.00",
+    "SELLER": "comicconnect",
+    "COMMENTS": "CGC"
+  },
+  {
+    "ISSUE #": 89,
+    "OWN": "X",
+    "GRADE": 9,
+    "PRICE": "$45.00",
+    "OPG VALUE": "$57.00",
+    "OPG 2014": "$63.00",
+    "OPG 2015": "$66.00",
+    "OPG 2016": "$82.00",
+    "SELLER": "comicconnect",
+    "COMMENTS": "CGC"
+  },
+  {
+    "ISSUE #": 90
+  },
+  {
+    "ISSUE #": "GS special"
+  },
+  {
+    "ISSUE #": 1,
+    "OWN": "X",
+    "GRADE": 8,
+    "PRICE": "$40.00",
+    "OPG VALUE": "$73.00",
+    "OPG 2014": "$76.00",
+    "OPG 2015": "$79.00",
+    "OPG 2016": "$82.00",
+    "SELLER": "paradise"
+  },
+  {
+    "ISSUE #": 2,
+    "OWN": "X",
+    "GRADE": 8.5,
+    "PRICE": "$55.00",
+    "OPG VALUE": "$75.00",
+    "OPG 2014": "$75.00",
+    "OPG 2015": "$75.00",
+    "OPG 2016": "$80.00",
+    "SELLER": "commicconnect",
+    "COMMENTS": "CGC"
+  },
+  {
+    "ISSUE #": 3,
+    "OWN": "X",
+    "GRADE": 8.5,
+    "PRICE": "$30.00",
+    "OPG VALUE": "$40.00",
+    "OPG 2014": "$40.00",
+    "OPG 2015": "$45.00",
+    "OPG 2016": "$45.00",
+    "SELLER": "commicconnect",
+    "COMMENTS": "cgc"
+  },
+  {
+    "ISSUE #": "ANNUAL"
+  },
+  {
+    "ISSUE #": 4,
+    "OWN": "X",
+    "GRADE": "VF+",
+    "PRICE": "$6.00",
+    "OPG VALUE": "$25.00",
+    "OPG 2014": "$25.00",
+    "OPG 2015": "$25.00",
+    "OPG 2016": "$25.00",
+    "SELLER": "Milehigh"
+  },
+  {
+    "PRICE": " $6,140.25",
+    "OPG VALUE": " $7,450.00",
+    "OPG 2014": " $8,320.00",
+    "OPG 2015": " $8,666.00",
+    "OPG 2016": " $9,135.00"
+  }
+]

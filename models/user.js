@@ -17,6 +17,11 @@ const UserSchema = mongoose.Schema({
     type: String,
     required: true,
   },
+  username: {
+    type: String,
+    required: true,
+  },
+  items: [{ type: Schema.Types.ObjectId, ref: 'item'}]
 });
 
 UserSchema.pre('save', function(next) {

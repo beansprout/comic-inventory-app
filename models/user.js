@@ -1,5 +1,7 @@
 const mongoose = require('mongoose');
 const bcrypt = require('bcrypt-nodejs');
+require('mongoose-currency').loadType(mongoose);
+const Currency = mongoose.Types.Currency;
 
 const UserSchema = mongoose.Schema({
   email: {
@@ -23,7 +25,7 @@ const UserSchema = mongoose.Schema({
   },
   collections: {
     collectionName: { type: String, unique: true },
-    collectionCurrentValue: { type: Number,
+    collectionCurrentValue: { type: Currency,
       // add current value for collection from updated price
     },
     items: {
@@ -35,10 +37,10 @@ const UserSchema = mongoose.Schema({
       own: { type: Boolean },
       wishList: { type: Boolean },
       itemPurchDate: { type: Date },
-      itemPurchPriceCdn: { type: Number },
-//       itemPurchPriceUsd: { type: Number },
-//       itemConversionUsd: { type: Number },
-//       itemConversionCdn: { type: Number },
+      itemPurchPriceCdn: { type: Currency },
+      itemPurchPriceUsd: { type: Currency },
+      itemConversionUsd: { type: Currency },
+      itemConversionCdn: { type: Currency },
       paper: String,
       grade: String,
       cgcGrade: String,
@@ -49,11 +51,13 @@ const UserSchema = mongoose.Schema({
       priceUpdates: {
         // from price Updates collection
       },
-      itemCurrentPrice: { type: Number, // calculate
+      itemCurrentPrice: { type: Currency, // calculate
       },
     },
   },
 });
+
+
 
 UserSchema.pre('save', function(next) {
   // generate the salt

@@ -15,7 +15,10 @@
 * make method to populate info from 3rd party api comic vine
 * add a form to react to add/ edit issues, test
 
-# Structure -working
+### 06.14.17 worked on structure for app (planning)
+
+
+# Structure updated 06.04.17
 
 ### client:
 ---------

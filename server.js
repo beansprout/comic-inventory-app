@@ -43,6 +43,92 @@ dbconnect.once('open', () => {
 require('./controllers')(app);
 require('./routes')(app);
 
+// --------------test
+// import async to make control flow simplier
+const async = require('async');
+const User = mongoose.model('User');
+
+//define dummy data
+const data = [
+{
+  email: 'chris@email.com',
+  password: '12345',
+  user: ObjectId,
+  userName: 'CrispyCrunch',
+  collections: [
+            [ 'The Avengers' ,
+                [
+                  { 
+                    itemId: ObjectId,
+                    issueNumber: 1,
+                  },
+                  {
+                    itemId: ObjectId,
+                    issueNumber: 2,
+                    itemSeriesName: '', 
+                    itemDate: '', 
+                    dateAdded: '', 
+                    OWN: true, 
+                    wishList: '', 
+                    itemPurchPrice: 130, 
+                    paper: '',
+                    GRADE: 3.5,
+                    CGC_GRADE: '',
+                    slabbed: false, 
+                    slabbedLater: false, 
+                    SELLER: 'comicconnect',
+                    COMMENTS: 'CGC', 
+                    priceUpdates: [
+                        {
+                            year:2013, 
+                            price:150
+                        },
+                        {   
+                            year:2014, 
+                            price:175
+                        }, 
+                    ],
+                itemCurrentPrice: 175
+                },
+            ],
+      ],
+      ['Dagar the Invincible',
+           [
+              {
+                itemId: ObjectId,
+                issueNumber: 1,
+                },
+              {
+                itemId: ObjectId,
+                issueNumber: 2,
+                itemSeriesName: '', 
+                itemDate: '', 
+                dateAdded: '', 
+                OWN: true, 
+                wishList: false, 
+                itemPurchPrice: 120, 
+                paper: '',
+                GRADE: '3.5',
+                CGC_GRADE: '',
+                slabbed: false, 
+                slabbedLater: false, 
+                SELLER: 'comicconnect',
+                COMMENTS: 'CGC', 
+                priceUpdates: [
+                    {
+                        year:2013, 
+                        price:150
+                    },
+                    {   
+                        year:2014, 
+                        price:175
+                    }, 
+                ],
+            itemCurrentPrice: 175     
+      }
+    ]
+  ]
+
 app.listen(port, (req, res) => {
   console.log(`server listening on port ${port}`);
 });

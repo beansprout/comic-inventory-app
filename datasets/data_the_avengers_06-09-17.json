@@ -1,4 +1,6 @@
 [
+"collectionName": "The Avengers",
+  "items": 
   {
     "ISSUE #": 1
   },
@@ -131,7 +133,7 @@
     "OPG 2016": "$291.00",
     "SELLER": "metropolis",
     "COMMENTS": "CGC",
-    "field12": "SLABBED LATER",
+    "SLABBED LATER": "SLABBED LATER",
     "field14": "originally graded 8.5"
   },
   {

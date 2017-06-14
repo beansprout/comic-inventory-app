@@ -1,0 +1,106 @@
+{
+  "email": "chris@email.com",
+  "password": "12345",
+  "user": "ObjectId",
+  "userName": "CrispyCrunch",
+  "collections": [
+                collectionName: "",
+                  items: {
+                    itemId: "ObjectId"
+                    "issueNumber": "1",
+                    "itemSeriesName": "", 
+                    "itemDate": "", 
+                    "dateAdded": "", 
+                    "own": "", 
+                    "wishList": "", 
+                    "itemPurchDate": "", 
+                    "paper": "",
+                    "grade": "",
+                    "cgcGrade": "",
+                    "slabbed": "", 
+                    "slabbedLater": "", 
+                    "seller": "",
+                    "comments": "", 
+                    "priceUpdates": "[{year: d, price: n}]"
+                    "itemCurrentPrice": ""
+                  }
+                "collectionCurrentValue": "",
+}
+
+{
+  "email": "chris@email.com",
+  "password": "12345",
+  "user": "ObjectId",
+  "userName" "CrispyCrunch"
+  "collections": 
+    [
+        "collectionName": "The Avengers",
+            "items": [
+                { 
+                    "itemId": "ObjectId",
+                    "ISSUE #": "1",
+                    },
+                    {
+                    "itemId": "ObjectId",
+                    "ISSUE #": "2",
+                    "itemSeriesName": "", 
+                    "itemDate": "", 
+                    "dateAdded": "", 
+                    "OWN": "true", 
+                    "wishList": "", 
+                    "itemPurchPrice": "130", 
+                    "paper": "",
+                    "GRADE": "3.5",
+                    "CGC_GRADE": "",
+                    "slabbed": "", 
+                    "slabbedLater": "", 
+                    "SELLER": "comicconnect",
+                    "COMMENTS": "CGC", 
+                    "priceUpdates": {
+                        {
+                            "year":"2013", 
+                            "price":"150"
+                        },
+                        {   
+                            "year":"2014", 
+                            "price":"175"
+                        }, 
+                },
+                "itemCurrentPrice": "175"
+            ],
+         "collectionName": "Dagar the Invincible",
+            "items": [
+                { 
+                    "itemId": "ObjectId",
+                    "ISSUE #": "1",
+                    },
+                    {
+                    "itemId": "ObjectId",
+                    "ISSUE #": "2",
+                    "itemSeriesName": "", 
+                    "itemDate": "", 
+                    "dateAdded": "", 
+                    "OWN": "true", 
+                    "wishList": "", 
+                    "itemPurchPrice": "130", 
+                    "paper": "",
+                    "GRADE": "3.5",
+                    "CGC_GRADE": "",
+                    "slabbed": "", 
+                    "slabbedLater": "", 
+                    "SELLER": "comicconnect",
+                    "COMMENTS": "CGC", 
+                    "priceUpdates": {
+                        {
+                            "year":"2013", 
+                            "price":"150"
+                        },
+                        {   
+                            "year":"2014", 
+                            "price":"175"
+                        }, 
+                },
+                "itemCurrentPrice": "175"
+            ],
+ };
+    

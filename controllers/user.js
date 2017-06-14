@@ -13,12 +13,6 @@ const createUser = (req, res) => {
   });
 };
 
-const getUsers = (req, res) => {
-  User.find({}, (err, users) => {
-    if (err) return res.send(err);
-    res.send(users);
-  });
-};
 
 module.exports = (app) => {
   app.post('/users', createUser);

@@ -1,3 +1,4 @@
+require('babel-polyfill');
 require('dotenv').config();
 
 const express = require('express');
@@ -55,8 +56,9 @@ const data = [
   password: '12345',
   user: ObjectId,
   userName: 'CrispyCrunch',
-  collections: [
-            [ 'The Avengers' ,
+  collections:
+    [
+      [ 'The Avengers' ,
                 [
                   { 
                     itemId: ObjectId,
@@ -91,7 +93,7 @@ const data = [
                 itemCurrentPrice: 175
                 },
             ],
-      ],
+       ],
       ['Dagar the Invincible',
            [
               {
@@ -124,10 +126,12 @@ const data = [
                         price:175
                     }, 
                 ],
-            itemCurrentPrice: 175     
-      }
-    ]
+                itemCurrentPrice: 175     
+            }
+          ],
+      ],
   ]
+
 
 app.listen(port, (req, res) => {
   console.log(`server listening on port ${port}`);

@@ -1,4 +1,5 @@
 const { User } = require('../models');
+
 const requireAuth = require('../services/passport').requireAuth;
 const getTokenForUser = require('../services/token');
 

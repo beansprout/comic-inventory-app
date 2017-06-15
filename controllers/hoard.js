@@ -1,12 +1,18 @@
 const { Hoard } = require('../models');
-const { User } = require('.//models');
 
+/*
+routes: 
+- addHoard: adds a new collection to list of collections
+- getHoards: get a list of collections
+- editHoards.
+
+*/
 module.exports = (app) => {
   const addHoard = (req, res) => {
-  const hoard = new Hoard(req.body);
-  hoard.save((err, addToHoards) => { // adds a new hoard
+    const hoard = new Hoard(req.body);
+    hoard.save((err, data) => { // adds a new hoard
       if (err) return res.send(err);
-      res.send(addToHoards.data);
+      res.send(data.data);
     });
 };
 
@@ -38,7 +44,7 @@ module.exports = (app) => {
 
 // }
 
-  app.post('/addHoard', addToHoards);
+  app.post('/addHoard', data.data);
   app.get('/hoard', getHoards);
 };
 

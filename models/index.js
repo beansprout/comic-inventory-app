@@ -7,5 +7,4 @@ module.exports = {
   Hoards: model('Hoards', require('./hoards')),
   // OPGprices: model('OPGprices', require('OPGprices')),
   Item: model('Item', require('./items')),
-  Child: model('Child', require('./items')),
 };

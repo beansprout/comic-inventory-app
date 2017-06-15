@@ -46,18 +46,18 @@ require('./models')(app);
 // --------------test
 // import async to make control flow simplier
 // const async = require('async');
-const User = mongoose.model('User');
+// const User = mongoose.model('User');
 
-//define dummy data
-const data = {
-  email: 'chris@email.com',
-  password: '12345',
-  userName: 'CrispyCrunch',
-  hoards: [
-     { hoard: 'The Avengers' },
-     { hoard: 'the Invincible' },
-  ],
-};
+// //define dummy data
+// const data = {
+//   email: 'chris@email.com',
+//   password: '12345',
+//   userName: 'CrispyCrunch',
+//   hoards: [
+//      { hoard: 'The Avengers' },
+//      { hoard: 'the Invincible' },
+//   ],
+// };
 
 app.listen(port, (req, res) => {
   console.log(`server listening on port ${port}`);

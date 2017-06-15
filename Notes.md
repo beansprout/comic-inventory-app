@@ -22,3 +22,33 @@
 * make methods currency populate/ convert in item controller, test
 * make method to populate info from 3rd party api comic vine
 * add a form to react to add/ edit issues, test
+
+```
+ItemSchema {
+  
+}
+
+UserSchema {
+  items: [{type: Schema.Types.ObjectId, ref: 'Item'}]
+}
+
+item {
+  id: ObjectId('dfnpawit204t8h24th23th2049th024r'),
+  someValue: 'hi',
+  anotherKey: 'sup',
+}
+
+user {
+  items: [
+    {
+      id: ObjectId('dfnpawit204t8h24th23th2049th024r'),
+      someValue: 'hi',
+      anotherKey: 'sup',
+    },
+    ObjectId('dfnpawit204t8h24th23th2049thdsfr'),
+    ObjectId('dfnpawit204t8h24th23th2329th024r'),
+    ObjectId('dfnpawit204t8h24th23th2049th0asr'),
+  ],
+}
+  
+Users.find({}).populate('items');

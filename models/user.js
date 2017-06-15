@@ -1,11 +1,9 @@
 const mongoose = require('mongoose');
 const Schema = mongoose.Schema;
+const ObjectId = Schema.Types.ObjectId;
 const bcrypt = require('bcrypt-nodejs');
-require('mongoose-currency').loadType(mongoose);
-const Currency = mongoose.Types.Currency;
-const ObjectId = Schema.ObjectId;
 
-const UserSchema = mongoose.Schema({
+const UserSchema = Schema({
   email: {
     type: String,
     unique: true,
@@ -21,45 +19,17 @@ const UserSchema = mongoose.Schema({
     type: String,
     required: true,
   },
-  user: ObjectId,
   userName: {
     type: String,
     required: true,
   },
-  collections: {
-    collectionName: { type: String, unique: true },
-    // collectionCurrentValue: { type: Currency,
-    //   // add current value for collection from updated price
-    // },
-      items: {
-        itemTitle: { type: String },
-    //   itemId: ObjectId,
-        issueNumber: { type: Number }, // check
-    //   itemSeriesName: { type: String },
-    //   itemDate: { type: Date },
-    //   dateAdded: Date.now(),
-    //   own: { type: Boolean },
-    //   wishList: { type: Boolean },
-    //   itemPurchDate: { type: Date },
-        itemPurchPriceCdn: { type: Currency },
-    //   itemPurchPriceUsd: { type: Currency },
-    //   itemConversionUsd: { type: Currency },
-    //   itemConversionCdn: { type: Currency },
-    //   paper: String,
-    //   grade: String,
-    //   cgcGrade: String,
-    //   slabbed: Boolean,
-    //   slabbedLater: Boolean,
-    //   seller: String,
-    //   comments: String,
-    //   priceUpdates: {
-    //     // from price Updates collection
-    //   },
-        itemCurrentPrice: { type: Currency, // calculate
-        },
-      },
-  },
-});
+  collections: [
+    {
+      collection:[{type: ObjectId, ref: 'Collections'}]]
+    }
+  ],
+  
+};
 
 UserSchema.pre('save', function(next) {
   // generate the salt

@@ -1,10 +1,10 @@
-const { User } = require('../models');
+const { Collection } = require('../models');
 
 module.exports = (app) => {
 
 const createCollection = (req, res) => {
-    const item = new Item(req.body);
-    item.save((err, item) => {
+    const collection = new Collection(req.body);
+    collection.save((err, item) => {
         if (err) return res.send(err);
         res.send(item),
     });

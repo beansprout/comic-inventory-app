@@ -14,7 +14,7 @@ const OPGSchema = Schema({
                 }, 
                 price: { 
                     type: Currency,
-                    options: { usdollars } // TODO how to model currency
+                    // options: { usdollars } // TODO how to model currency
                 }
         }
     ]

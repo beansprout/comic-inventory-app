@@ -50,9 +50,6 @@ const async = require('async');
 const User = mongoose.model('User');
 
 //define dummy data
-<<<<<<< HEAD
-
-=======
 const data = {
     email: 'chris@email.com',
     password: '12345',
@@ -63,7 +60,6 @@ const data = {
         collectionName: 'Dagar the Invincible'
     }          
   }
->>>>>>> 8fdc22e6b4af6d68dcfc78bb9cadb4dbfe3684d9
 
 
 app.listen(port, (req, res) => {

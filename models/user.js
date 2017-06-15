@@ -2,34 +2,37 @@ const mongoose = require('mongoose');
 const Schema = mongoose.Schema;
 const ObjectId = Schema.Types.ObjectId;
 const bcrypt = require('bcrypt-nodejs');
+require('mongoose-currency').loadType(mongoose);
+const Currency = mongoose.Types.Currency;
 
-const UserSchema = Schema({
-  email: {
-    type: String,
-    unique: true,
-    lowercase: true,
-    required: true,
-    validate: {
-      validator: (email) => {
-        return /^(([^<>()\[\]\\.,;:\s@"]+(\.[^<>()\[\]\\.,;:\s@"]+)*)|(".+"))@((\[[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}])|(([a-zA-Z\-0-9]+\.)+[a-zA-Z]{2,}))$/.test(email);
+const UserSchema = Schema(
+  {
+    email: {
+      type: String,
+      unique: true,
+      lowercase: true,
+      required: true,
+      validate: {
+        validator: (email) => {
+          return /^(([^<>()\[\]\\.,;:\s@"]+(\.[^<>()\[\]\\.,;:\s@"]+)*)|(".+"))@((\[[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}])|(([a-zA-Z\-0-9]+\.)+[a-zA-Z]{2,}))$/.test(email);
+        },
       },
     },
-  },
-  password: {
-    type: String,
-    required: true,
-  },
-  userName: {
-    type: String,
-    required: true,
-  },
-  collections: [
-    {
-      collection:[{type: ObjectId, ref: 'Collections'}]]
-    }
-  ],
-  
-};
+    password: {
+      type: String,
+      required: true,
+    },
+    userName: {
+      type: String,
+      required: true,
+    },
+    hoards: [
+      {
+        hoard: [{type: ObjectId, ref: 'Hoards'}],
+      }
+    ],
+    collectionCurrentValue: { type: Currency },
+});
 
 UserSchema.pre('save', function(next) {
   // generate the salt

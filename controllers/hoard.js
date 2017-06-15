@@ -1,16 +1,16 @@
-const { Collection } = require('../models');
+const { Hoard } = require('../models');
+const { User } = require('.//models');
 
 module.exports = (app) => {
-
-const createCollection = (req, res) => {
-    const collection = new Collection(req.body);
-    collection.save((err, item) => {
-        if (err) return res.send(err);
-        res.send(item),
+  const addHoard = (req, res) => {
+  const hoard = new Hoard(req.body);
+  hoard.save((err, addToHoards) => { // adds a new hoard
+      if (err) return res.send(err);
+      res.send(addToHoards.data);
     });
 };
-    
-// const getItem = (req, res) => {
+
+// const getHoards = (req, res) => {
 //     // item find by series and issue
 //     // search function
 //     // match req.body.params to user, series, item
@@ -21,26 +21,24 @@ const createCollection = (req, res) => {
 // }
 // const editItem = (req, res, next) => {
 //     // get item
-    
+
 // }
 // // comic-book inventory
-    
+
 //     // post - add new issue
-//         // add image from comic vine 
+//         // add image from comic vine
 //             // check cache first
 //             // if not get from comic vine
 //                 // put in cache
 //     // get - issue'
 
 // const getCollections = (req, res) => {
-//   // 
+//   //
 // }
 
 // }
 
-  app.post('/collection', createCollection);
-  app.get('/collection',  getCollection);
+  app.post('/addHoard', addToHoards);
+  app.get('/hoard', getHoards);
 };
-
-    
 

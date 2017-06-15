@@ -1,9 +1,11 @@
 const mongoose = require('mongoose');
+
 const model = mongoose.model;
 
 module.exports = {
   User: model('User', require('./user')),
-  // Collection: model('Collections', require('./collections')),  
-  // Item: model('Items', require('./items')),
+  Hoards: model('Hoards', require('./hoards')),  
   // OPGprices: model('OPGprices', require('OPGprices')),
+  Item: model('Item', require('./item')),
+  Child: model('Child', require('./item')),
 };

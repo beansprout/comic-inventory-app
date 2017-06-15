@@ -1,7 +1,7 @@
 const mongoose = require('mongoose');
 
 const Schema = mongoose.Schema;
-const ObjectId = Schema.Types.ObjectId;
+// const ObjectId = Schema.Types.ObjectId;
 
 require('mongoose-currency').loadType(mongoose);
 
@@ -37,11 +37,6 @@ const ItemSchema = Schema({
 
 // define child schema so items remain separate in case too many items
 // hoard parent category might get too large.
-const ChildSchema = Schema(
-  {
-    name: String,
-    hoard: { type: ObjectId, ref: 'Hoards' },
-  });
 
-module.exports = { ItemSchema, ChildSchema };
+module.exports = { ItemSchema };
 

@@ -1,8 +1,10 @@
 const mongoose = require('mongoose');
+
 const Schema = mongoose.Schema;
 const ObjectId = Schema.Types.ObjectId;
 const bcrypt = require('bcrypt-nodejs');
 require('mongoose-currency').loadType(mongoose);
+
 const Currency = mongoose.Types.Currency;
 
 const UserSchema = Schema(
@@ -28,13 +30,13 @@ const UserSchema = Schema(
     },
     hoards: [
       {
-        hoard: [{type: ObjectId, ref: 'Hoards'}],
-      }
+        hoard: [{ type: ObjectId, ref: 'Hoards' }],
+      },
     ],
     collectionCurrentValue: { type: Currency },
-});
+  });
 
-UserSchema.pre('save', function(next) {
+UserSchema.pre('save', function (next) {
   // generate the salt
   bcrypt.genSalt(10, (err, salt) => {
     if (err) return next(err);
@@ -47,7 +49,7 @@ UserSchema.pre('save', function(next) {
   });
 });
 
-UserSchema.methods.checkPassword = function(potentialPassword, cb) {
+UserSchema.methods.checkPassword = function (potentialPassword, cb) {
   bcrypt.compare(potentialPassword, this.password, (err, isMatch) => {
     if (err) return cb(err);
     cb(null, isMatch);

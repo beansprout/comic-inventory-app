@@ -12,8 +12,7 @@ const createUser = (req, res) => {
   });
 };
 
-
 module.exports = (app) => {
   app.post('/users', createUser);
-  app.get('/users', requireAuth, getUsers);
+  // app.get('/users', requireAuth, getUsers);
 };

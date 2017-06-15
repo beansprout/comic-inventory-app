@@ -36,31 +36,28 @@ dbconnect.once('open', () => {
   // we're connected!
 });
 //-----------------------------------------------
- 
- app.get('/', (req, res) => {
-    res.send('Hello World');
-  });
+app.get('/', (req, res) => {
+  res.send('Hello World');
+});
 
 require('./controllers')(app);
-require('./routes')(app);
+require('./models')(app);
 
 // --------------test
 // import async to make control flow simplier
-const async = require('async');
+// const async = require('async');
 const User = mongoose.model('User');
 
 //define dummy data
 const data = {
-    email: 'chris@email.com',
-    password: '12345',
-    user: ObjectId,
-    userName: 'CrispyCrunch',
-    collections: {
-        collectionName: 'The Avengers', 
-        collectionName: 'Dagar the Invincible'
-    }          
-  }
-
+  email: 'chris@email.com',
+  password: '12345',
+  userName: 'CrispyCrunch',
+  hoards: [
+     { hoard: 'The Avengers' },
+     { hoard: 'the Invincible' },
+  ],
+};
 
 app.listen(port, (req, res) => {
   console.log(`server listening on port ${port}`);

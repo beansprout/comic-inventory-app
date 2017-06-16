@@ -30,8 +30,8 @@ const mongodbUri = `mongodb://${dbUser}:${pass}@${host}:${dbport}/${db}`;
 const options = { server: { socketOptions: { keepAlive: 300000, connectTimeoutMS: 30000 } },
   replset: { socketOptions: { keepAlive: 300000, connectTimeoutMS: 30000 } } };
 
-// mongoose.connect('mongodb://localhost/comics'); // for testing on local database
-mongoose.connect(mongodbUri, options);
+mongoose.connect('mongodb://localhost/comics'); // for testing on local database
+// mongoose.connect(mongodbUri, options);
 const dbconnect = mongoose.connection;
 dbconnect.on('error', console.error.bind(console, 'connection error:'));
 dbconnect.once('open', () => {
@@ -56,6 +56,12 @@ require('./controllers')(app);
 //   ],
 // };
 
-app.listen(port, (req, res) => {
+module.exports = (app) => {
+  app.get('/', (req, res) => {
+    res.send(`Helloooo from port {port}`);
+  });
+};
+
+  app.listen(port, (req, res) => {
   console.log(`server listening on port ${port}`);
 });

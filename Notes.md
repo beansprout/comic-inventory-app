@@ -16,8 +16,12 @@
 * added to user schema, added types
 * added module require_optional
 
-### 06.15.17 worked on debugging schemas/controllers
+### 06.15.17 worked on debugging schemas/controllers, creating routes
 * Finally got schemas/ models to not break my server.
+* Added GET and POST routes for database
+* started building folder structure for react redux app
+* installed dependencies for react redux wiring up
+* installed plugin mongoose-string-query for writing search routes more easily
 
 * Here's how I found the problem with my schemas/controllers
 - had an issue where the server kept crashing
@@ -36,6 +40,7 @@
 * make methods currency populate/ convert in item controller, test
 * make method to populate info from 3rd party api comic vine
 * add a form to react to add/ edit issues, test
+* add a way to search -> install plugin mongoose-string-query
 
 ## Collections Reference:
 * hoards - collections i.e. which series or group.  Example Comic book series 'The Avengers'
@@ -55,9 +60,10 @@
         '/items' return a list of all items @done
         '/users' return a list of users by username @TODO
 * GET by search parameters
-    * @ refers to collection name
-         '/search?@hoard&&collectionName="collectionName" 
-         '/search?@item&&itemName="IssueName"&&issueNumber="number"
+    * Examples
+         '/hoard?collectionName=collectionName'
+         '/item?itemName=IssueName&issueNumber=number'
+         use format from plugin mongoose-string-query
 * POST routes - for creating new users, hoards, or items
         '/hoard' to add a new hoard @done
         '/item' to add a new item @done
@@ -97,3 +103,41 @@ user {
 }
   
 Users.find({}).populate('items');
+
+------------------------------
+FindOrFail snippet for Mongoose Express server
+
+ From module findOneOrFail
+ https://github.com/Turanchoks/mongoose-findoneorfail
+
+module.exports = (schema, options) => {
+    var options = Object.assign({}, options);
+
+    schema.statics.findOneOrFail = function() {
+        return this
+            .findOne.apply(this, arguments)
+            .exec()
+            .then(doc => {
+                if (doc) {
+                    return doc;
+                } else {
+                    var err = new Error(options.NotFoundMessage || 'Not Found');
+                    err.statusCode = 404;
+                    throw err;
+                }
+            });
+    };
+};
+
+# Example Use with expressjs
+
+app.get('/models/:id', (req, res, next) => {
+    MongooseModel
+        .findOneOrFail({
+            id: req.params.id
+        })
+        .then(model => res.send(model))
+        .catch(next);
+});
+
+---------------------------

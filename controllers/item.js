@@ -14,19 +14,8 @@ const getItems = (req, res) => {
     res.send(items);
   });
 };
-// const editItem = (req, res, next) => {
-//     // get item
-
-// }
-// // comic-book inventory
-
-//     // post - add new issue
-//         // add image from comic vine
-//             // check cache first
-//             // if not get from comic vine
-//                 // put in cache
 
 module.exports = (app) => {
-  app.post('/item', newitem);
-  app.get('/item/:', getitem);
+  app.post('/item', newItem);
+  app.get('/item/:', getItems);
 };

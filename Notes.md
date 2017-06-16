@@ -37,6 +37,35 @@
 * make method to populate info from 3rd party api comic vine
 * add a form to react to add/ edit issues, test
 
+## Collections Reference:
+* hoards - collections i.e. which series or group.  Example Comic book series 'The Avengers'
+* items - refers to an issue or item in a series or group, child of a 'hoard'
+* users - who owns the collection.  
+
+## Methods to add: 
+* populate on update 
+* check if exists already on save, if not createNew, else return existing
+* validate for whatever
+* search 
+
+## Query Routes to Do/ Done:
+
+* GET   '/'
+        '/hoards' return a list of all hoards @done
+        '/items' return a list of all items @done
+        '/users' return a list of users by username @TODO
+* GET by search parameters
+    * @ refers to collection name
+         '/search?@hoard&&collectionName="collectionName" 
+         '/search?@item&&itemName="IssueName"&&issueNumber="number"
+* POST routes - for creating new users, hoards, or items
+        '/hoard' to add a new hoard @done
+        '/item' to add a new item @done
+        '/user' to add a new user @done
+* Still need to add validation to POSTs
+
+* PUT routes (to edit existing documents)
+
 
 # Reference - 'joining' in Mongo/Mongoose
 ```

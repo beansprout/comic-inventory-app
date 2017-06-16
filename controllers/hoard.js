@@ -1,30 +1,29 @@
-const { Hoard } = require('../models');
-
+const models = require('../models');
 /*
-routes: 
-- addHoard: adds a new collection to list of collections
-- getHoards: get a list of collections
+routes
+- /newHoard adds to parent collection hoard.
+- getHoards: get a list of all hoards
 - editHoards.
-
 */
-module.exports = (app) => {
-  const addHoard = (req, res) => {
-    const hoard = new Hoard(req.body);
-    hoard.save((err, data) => { // adds a new hoard
-      if (err) return res.send(err);
-      res.send(data.data);
+// add to main list of collections.  Using 'hoard' b/c collection is a reserved word
+const newHoard = (req, res) => {
+  const hoard = models.Hoard(req.body);
+  hoard.save((err, response) => { // adds a new hoard
+    if (err) return res.send(err);
+    res.send(response.data);
     });
 };
 
-// const getHoards = (req, res) => {
-//     // item find by series and issue
-//     // search function
-//     // match req.body.params to user, series, item
-//         ({}, (err, users) => {
-//     if (err) return res.send(err);
-//     res.send(item.data);
-//   });
-// }
+const getHoards = (req, res) => {
+    // item find by series and issue
+    // search function
+    // match req.body.params to user, series, item
+        ({}, (err, users) => {
+    if (err) return res.send(err);
+    res.send(item.data);
+  });
+};
+
 // const editItem = (req, res, next) => {
 //     // get item
 
@@ -42,9 +41,8 @@ module.exports = (app) => {
 //   //
 // }
 
-// }
-
-  app.post('/addHoard', data.data);
-  app.get('/hoard', getHoards);
+module.exports = (app) => {
+  app.post('/hoards', newHoard);
+  app.get('/hoards', getHoards);
 };
 

@@ -15,33 +15,37 @@ app.use(bodyParser.urlencoded({ extended: false }));
 app.use(bodyParser.json());
 app.use(morgan('dev'));
 
-// --------database connection--------------------
-const dbUser = process.env.DB_USER;
-const pass = process.env.PASS;
-const host = process.env.HOST;
-const dbport = process.env.DB_PORT;
-const db = process.env.DB;
+// // --------database connection--------------------
+// const dbUser = process.env.DB_USER;
+// const pass = process.env.PASS;
+// const host = process.env.HOST;
+// const dbport = process.env.DB_PORT;
+// const db = process.env.DB;
 
-const mongodbUri = `mongodb://${dbUser}:${pass}@${host}:${dbport}/${db}`;
-
+//-------- commented out just for testing starts here---------remove this line when done testing------------
+// const mongodbUri = `mongodb://${dbUser}:${pass}@${host}:${dbport}/${db}`;
+//---------ends----------------------------------- remove this line when done testing-------------
 // Mongoose by default sets the auto_reconnect option to true
 // add 30 second connection timeout to allow for enough time to connect
-const options = { server: { socketOptions: { keepAlive: 300000, connectTimeoutMS: 30000 } },
-  replset: { socketOptions: { keepAlive: 300000, connectTimeoutMS: 30000 } } };
 
-mongoose.connect(mongodbUri, options);
+//-------- commented out just for testing starts here---------remove this line when done testing------------
+// const options = { server: { socketOptions: { keepAlive: 300000, connectTimeoutMS: 30000 } },
+//   replset: { socketOptions: { keepAlive: 300000, connectTimeoutMS: 30000 } } };
+
+// mongoose.connect(mongodbUri, options);
+//-------- commented out just for testing ends here---------remove this line when done testing------------
+mongoose.connect('mongodb://localhost/comics');
 const dbconnect = mongoose.connection;
 dbconnect.on('error', console.error.bind(console, 'connection error:'));
 dbconnect.once('open', () => {
   // we're connected!
 });
 //-----------------------------------------------
-app.get('/', (req, res) => {
-  res.send('Hello World');
-});
+// app.get('/', (req, res) => {
+//   res.send('Hello World');
+// });
 
 require('./controllers')(app);
-require('./models')(app);
 
 // --------------test
 // import async to make control flow simplier

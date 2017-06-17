@@ -34,13 +34,24 @@
 ```
   Supporting this behavior would involve a massive refactor of mongoose connections. Long story short, require('mongoose').model(); is different than var model = require('mongoose').model; model(); because the value of this in the former function call is the require('mongoose'); singleton, whereas it is the global object in the latter call. If you want a workaround, model.call(require('mongoose'), 'MyModelName', schema); should work fine. I'm not a huge fan of the fact that mongoose's top level functions are laden with side effects, but to get rid of that we'd also have to get rid of the mongoose.model() getter syntax, which would break a lot of people's code.
 ```
+# 6.16.17
+* Tried to get plugin mongoose-string-query to work but it crashes the server.  Spent some time trying to figure out what was happening, realize I don't know enough about queries, apis, express, and MongoDB to have any clue.
+* Read up, was unable to resolve since I don't even know what the problem was.  Decided to work on client side while I let it percolate
+* Started wiring up react, redux, redux-form
+* Realized I have forgotten everything there too.  Read up on react, redux, and how to incorporate with APIs
+* Found MERN - boilerplate starter kit for essentially what I am trying to wire up.
+* Decided - will simplify everything down, learn foundation and figure out better what the code is doing and why before I try to get all fancy.
 
 ### next:
+* Simplify models and test until things work.  Then add view to client to show list
+
+Other Notes
+### TODO:
+
 * testing out routes/ creating getting etc. 
 * make methods currency populate/ convert in item controller, test
 * make method to populate info from 3rd party api comic vine
 * add a form to react to add/ edit issues, test
-* add a way to search -> install plugin mongoose-string-query
 
 ## Collections Reference:
 * hoards - collections i.e. which series or group.  Example Comic book series 'The Avengers'

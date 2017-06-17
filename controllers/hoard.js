@@ -15,14 +15,8 @@ const getHoards = (req, res) => {
   });
 };
 
-const findHoard = (req, res) => {
-  Hoard.apiQuery(req.params, (err, items) {
-    if (err) return res.send(err);
-    res.send(items);
-  });
-};
 module.exports = (app) => {
   app.post('/hoards', newHoard);
-  app.get('/hoards', getHoards);
+  app.get('/hoards', getHoards); 
 };
 

@@ -17,7 +17,7 @@ const getItems = (req, res) => {
 };
 
 const findItem = (req, res) => {
-  Item.apiQuery(req.query, (err, items) {
+  Item.(req.params, (err, items) {
     if (err) return res.send(err);
     res.send(items);
   });

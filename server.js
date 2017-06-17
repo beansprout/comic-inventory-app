@@ -16,19 +16,19 @@ app.use(bodyParser.json());
 app.use(morgan('dev'));
 
 // --------database connection--------------------
-const dbUser = process.env.DB_USER;
-const pass = process.env.PASS;
-const host = process.env.HOST;
-const dbport = process.env.DB_PORT;
-const db = process.env.DB;
+// const dbUser = process.env.DB_USER;
+// const pass = process.env.PASS;
+// const host = process.env.HOST;
+// const dbport = process.env.DB_PORT;
+// const db = process.env.DB;
 
-const mongodbUri = `mongodb://${dbUser}:${pass}@${host}:${dbport}/${db}`;
+// const mongodbUri = `mongodb://${dbUser}:${pass}@${host}:${dbport}/${db}`;
 
 // Mongoose by default sets the auto_reconnect option to true
 // add 30 second connection timeout to allow for enough time to connect
 
-const options = { server: { socketOptions: { keepAlive: 300000, connectTimeoutMS: 30000 } },
-  replset: { socketOptions: { keepAlive: 300000, connectTimeoutMS: 30000 } } };
+// const options = { server: { socketOptions: { keepAlive: 300000, connectTimeoutMS: 30000 } },
+//   replset: { socketOptions: { keepAlive: 300000, connectTimeoutMS: 30000 } } };
 
 mongoose.connect('mongodb://localhost/comics'); // for testing on local database
 // mongoose.connect(mongodbUri, options);
@@ -56,11 +56,9 @@ require('./controllers')(app);
 //   ],
 // };
 
-module.exports = (app) => {
   app.get('/', (req, res) => {
-    res.send(`Helloooo from port {port}`);
+    res.send(`Helloooo`);
   });
-};
 
   app.listen(port, (req, res) => {
   console.log(`server listening on port ${port}`);

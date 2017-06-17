@@ -28,8 +28,9 @@ const ItemSchema = mongoose.Schema({
     // priceUpdates: [
     //         { type: ObjectId, ref: 'OPGprices' },
     // ],
-    itemCurrentPrice: { type: Currency }, // calculate
-  },
+    itemCurrentPrice: { type: Currency }, 
+    timestamps: Date,
+  }
 });
 
 ItemSchema.plugin(mongooseStringQuery);

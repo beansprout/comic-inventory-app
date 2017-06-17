@@ -40,26 +40,10 @@ dbconnect.once('open', () => {
 
 require('./controllers')(app);
 
-// --------------test
-// import async to make control flow simplier
-// const async = require('async');
-// const User = mongoose.model('User');
+app.get('/', (req, res) => {
+  res.send('Helloooo');
+});
 
-// //define dummy data
-// const data = {
-//   email: 'chris@email.com',
-//   password: '12345',
-//   userName: 'CrispyCrunch',
-//   hoards: [
-//      { hoard: 'The Avengers' },
-//      { hoard: 'the Invincible' },
-//   ],
-// };
-
-  app.get('/', (req, res) => {
-    res.send(`Helloooo`);
-  });
-
-  app.listen(port, (req, res) => {
+app.listen(port, (req, res) => {
   console.log(`server listening on port ${port}`);
 });

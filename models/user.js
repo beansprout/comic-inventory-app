@@ -1,12 +1,11 @@
 const mongoose = require('mongoose');
 const bcrypt = require('bcrypt-nodejs');
-const ObjectId = require('mongoose').Schema.Types.ObjectId;
 
-require('mongoose-currency').loadType(mongoose);
+require('./hoard');
 
-const Currency = mongoose.Types.Currency;
+const Schema = mongoose.Schema;
 
-const UserSchema = mongoose.Schema(
+const UserSchema = Schema(
   {
     email: {
       type: String,
@@ -29,10 +28,9 @@ const UserSchema = mongoose.Schema(
     },
     hoards: [
       {
-        hoard: [{ type: ObjectId, ref: 'Hoard' }],
+        hoard: [{ type: Schema.Type.ObjectId, ref: 'Hoard' }],
       },
     ],
-    collectionCurrentValue: { type: Currency },
   });
 
 UserSchema.pre('save', function (next) {

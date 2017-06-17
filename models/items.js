@@ -1,5 +1,5 @@
 const mongoose = require('mongoose');
-const ObjectId = require('mongoose').Schema.Types.ObjectId;
+const mongooseStringQuery = require('mongoose-string-query');
 require('mongoose-currency').loadType(mongoose);
 
 const Currency = mongoose.Types.Currency;
@@ -8,7 +8,7 @@ const ItemSchema = mongoose.Schema({
   item: {
     itemTitle: { type: String },
     issueNumber: { type: Number }, // check
-    hoard: { type: ObjectId, ref: 'hoard' },
+    hoard: { type: String, ref: 'Hoard' },
     itemDate: { type: Date },
     dateAdded: { type: Date },
     own: { type: Boolean },
@@ -32,8 +32,7 @@ const ItemSchema = mongoose.Schema({
   },
 });
 
-// define child schema so items remain separate in case too many items
-// hoard parent category might get too large.
+ItemSchema.plugin(mongooseStringQuery);
 
 module.exports = ItemSchema;
 

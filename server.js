@@ -11,7 +11,7 @@ const port = process.env.PORT || 8080;
 
 const app = express();
 app.use(cors());
-app.use(bodyParser.urlencoded({ extended: false }));
+// app.use(bodyParser.urlencoded({ extended: false }));
 app.use(bodyParser.json());
 app.use(morgan('dev'));
 

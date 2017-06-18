@@ -16,15 +16,15 @@ const getItems = (req, res) => {
   });
 };
 
-const findItem = (req, res) => {
-  Item.(req.params, (err, items) {
-    if (err) return res.send(err);
-    res.send(items);
-  });
-};
+// const findItem = (req, res) => {
+//   Item.(req.params, (err, items) {
+//     if (err) return res.send(err);
+//     res.send(items);
+//   });
+// };
 
 module.exports = (app) => {
   app.post('/item', newItem);
   app.get('/items', getItems);
-  app.get('/item', findItem);
+  // app.get('/item', findItem);
 };

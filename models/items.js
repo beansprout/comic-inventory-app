@@ -1,11 +1,14 @@
 const mongoose = require('mongoose');
-require('./hoard');
 
 const ItemSchema = mongoose.Schema({
   item: {
     itemTitle: { type: String },
     issueNumber: { type: Number },
-    hoard: { type: String, ref: 'Hoard' },
+    collectionName: { type: String, ref: 'Hoard' },
+    publisher: String,
+    year: Number,
+    itemGrade: String,
+    itemPurchPrice: Number,
   },
 });
 

@@ -1,8 +1,6 @@
 const mongoose = require('mongoose');
 const bcrypt = require('bcrypt-nodejs');
 
-require('./hoard');
-
 const Schema = mongoose.Schema;
 
 const UserSchema = Schema(
@@ -27,9 +25,7 @@ const UserSchema = Schema(
       required: true,
     },
     hoards: [
-      {
-        hoard: [{ type: Schema.Type.ObjectId, ref: 'Hoard' }],
-      },
+      { type: Schema.Types.ObjectId, ref: 'Hoard' },
     ],
   });
 

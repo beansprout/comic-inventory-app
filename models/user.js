@@ -29,7 +29,7 @@ const UserSchema = Schema(
     ],
     itemsInUserHoard: [
       {
-        type: Schema.Types.ObjectId, ref: 'Item', 
+        type: Schema.Types.ObjectId, ref: 'Item',
         itemGrade: String,
         itemPurchPrice: Number,
       },

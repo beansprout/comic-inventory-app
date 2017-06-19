@@ -6,8 +6,6 @@ const ItemSchema = mongoose.Schema({
   collectionName: { type: String, ref: 'Hoard' },
   publisher: String,
   year: Number,
-  itemGrade: String,
-  itemPurchPrice: Number,
 });
 
 module.exports = ItemSchema;

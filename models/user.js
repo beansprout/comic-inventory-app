@@ -27,6 +27,13 @@ const UserSchema = Schema(
     hoards: [
       { type: Schema.Types.ObjectId, ref: 'Hoard' },
     ],
+    itemsInUserHoard: [
+      {
+        type: Schema.Types.ObjectId, ref: 'Item', 
+        itemGrade: String,
+        itemPurchPrice: Number,
+      },
+    ],
   });
 
 UserSchema.pre('save', function (next) {

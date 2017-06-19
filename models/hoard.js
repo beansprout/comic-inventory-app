@@ -8,8 +8,8 @@ const HoardSchema = Schema({
   publisher: String,
   year: Number,
   items: [
-    { type: Schema.Types.ObjectId, ref: 'Item' }
-    ],
+    { type: Schema.Types.ObjectId, ref: 'Item' },
+  ],
 });
 
 module.exports = HoardSchema;

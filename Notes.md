@@ -42,7 +42,19 @@
 * Found MERN - boilerplate starter kit for essentially what I am trying to wire up.
 * Decided - will simplify everything down, learn foundation and figure out better what the code is doing and why before I try to get all fancy.
 
+# 06.17.17
+* Simplified schemas
+* Cleaned up code
+* Tested routes.  
+* Working routes: 
+        POST /user
+        POST /hoards
+        GET /hoards
+        POST /item
+        GET /items
+    
 ### next:
+* Work out populating and queries
 * Simplify models and test until things work.  Then add view to client to show list
 
 Other Notes
@@ -74,7 +86,6 @@ Other Notes
     * Examples
          '/hoard?collectionName=collectionName'
          '/item?itemName=IssueName&issueNumber=number'
-         use format from plugin mongoose-string-query
 * POST routes - for creating new users, hoards, or items
         '/hoard' to add a new hoard @done
         '/item' to add a new item @done

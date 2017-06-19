@@ -5,7 +5,7 @@ const newItem = (req, res) => {
   item.save((err, response) => { // adds a new Item
     if (err) return res.send(err);
     res.send(response.data);
-    });
+  });
 };
 
 // get all items
